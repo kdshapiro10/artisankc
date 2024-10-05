@@ -51,3 +51,18 @@
 
 /*----- TEXT AND FONT STYLES -----*/
 
+
+
+
+
+
+
+/*----- NAVIGATION STYLES -----*/
+nav {
+   text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    display:flex;
+}
