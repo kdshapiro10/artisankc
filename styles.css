@@ -21,6 +21,7 @@
 
 
 
+
 /* ----- SKIP LINK STYLES -----*/
 #skip {
     position: absolute;
@@ -57,7 +58,12 @@
 
 
 
-/*----- NAVIGATION STYLES -----*/
+/*----- HEADER AND NAVIGATION STYLES -----*/
+.logo {
+    width: 100px;
+    height:100px;
+}
+
 nav {
    text-decoration: none;
 }
