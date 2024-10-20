@@ -17,7 +17,10 @@
 
 
 
-
+body {
+    width:500px;
+    margin: 0 auto;
+}
 
 
 /* ----- SKIP LINK STYLES -----*/
@@ -69,4 +72,10 @@ nav {
 ul li {
     list-style: none;
     display:flex;
+}
+
+
+/*----- MAIN STYLES -----*/
+#main-image {
+    width:500px;
 }
