@@ -137,8 +137,10 @@ body {
 }
 /*----- TEXT AND FONT STYLES -----*/
 
-
-
+h2 {
+    color: var(--main-yellow);
+    text-align: center;
+}
 
 
 
@@ -189,6 +191,34 @@ footer {
 }
 
 
+/* CONTACT-US.HTML----*/
+#contact-grid {
+    text-align: center;
+    row-gap: 30px;
+}
+
+label{
+    align-items: left;
+}
+
+fieldset {
+    min-width: 500px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+#contact-form {
+    
+    min-width: 500px;
+    align-items: center;
+    
+}
+
+h3 {
+    color: var(--main-yellow);
+}
 /*----- MEDIA QUERIES-----*/
 
 @media screen and (max-width:650px) {
@@ -219,3 +249,17 @@ footer {
         display: block;
     }
 } 
+
+
+/* CONTACT-US.HTML----*/
+#contact-grid {
+    display: grid;
+    
+}
+
+#contact-form {
+    display: grid;
+  
+}
+
+
