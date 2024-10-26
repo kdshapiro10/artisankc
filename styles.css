@@ -11,16 +11,102 @@
 
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
+li {
+    list-style: none;
+}
 
 
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 body {
-    width:500px;
+    width: auto;
     margin: 0 auto;
+    background-color: #000;
+    color:white;
+
 }
+
+.header {
+    background-color:  rgb(19, 22, 26, 70%);
+    width:100%;
+    margin:0 auto;
+    top: 0;
+}
+
+.header-content {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 40px;
+}
+
+
+.nav {
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav-item {
+}
+
+.nav-link {
+}
+
+.nav-link:hover, .nav-link:focus {
+    color:
+}
+
+.hamburger {
+     display: none;
+     cursor:pointer;
+}
+
+
+.bar {
+    height: 2px;
+    width: 40px;
+    justify-content: space-between;
+    background:white;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+
+.hamburger--open .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+
+.hamburger--open .bar:nth-child(2){
+    opacity: 0;
+}
+
+
+.hamburger--open .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
 
 
 /* ----- SKIP LINK STYLES -----*/
@@ -60,22 +146,73 @@ body {
 
 
 /*----- HEADER AND NAVIGATION STYLES -----*/
-.logo {
-    width: 100px;
-    height:100px;
+.logo img {
+    width: 50px;
+    height:50px;
+    margin: 15px 10px 10px;
 }
 
-nav {
-   text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-    display:flex;
-}
 
 
 /*----- MAIN STYLES -----*/
 #main-image {
-    width:500px;
+    top: 80px;
+    width:100%;
+    position:relative;
 }
+
+#main-info {
+    top: -40px;
+    width: 350px;
+    position: relative;
+}
+
+#main-text {
+    background-color: rgb(19, 22, 26, 70%);
+    padding: 5px 10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#main-button {
+    margin-left:20px;
+    
+}
+    
+
+.main-info {
+    visibility: hidden;
+}
+/*----- FOOTER STYLES -----*/
+
+
+
+@media screen and (max-width:650px) {
+    .header {
+        height: 
+    }
+    .nav {
+        top: 0;
+        left: 0;
+        width:100%;
+        position:fixed;
+        background-color:  rgb(19, 22, 26);
+        padding: 250px 0 500px;
+        transform: translateX(110%);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+} 
