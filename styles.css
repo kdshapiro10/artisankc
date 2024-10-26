@@ -56,13 +56,14 @@ body {
 }
 
 .nav-item {
-}
-
-.nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .nav-link:hover, .nav-link:focus {
-    color:
+    color:var(--main-yellow);
+    padding-bottom: 5px;
+    font-weight: bold;
 }
 
 .hamburger {
@@ -153,7 +154,6 @@ h2 {
 }
 
 
-
 /*----- MAIN STYLES -----*/
 #main-image {
     top: 80px;
@@ -173,6 +173,10 @@ h2 {
     text-align: left;
     margin-left: 20px;
     margin-bottom: 15px;
+}
+
+#main-text p {
+    margin-left: 9px;
 }
 
 #main-text h2 {
