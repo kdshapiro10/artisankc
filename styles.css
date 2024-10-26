@@ -1,16 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +25,11 @@ body {
 
 }
 
+:root {
+    --main-yellow:#c6990c;
+}
+
+/*----- HAMBURGER NAV MENU STYLES-----*/
 .header {
     background-color:  rgb(19, 22, 26, 70%);
     width:100%;
@@ -137,6 +131,10 @@ body {
     overflow: hidden;
 }
 
+
+.main-info {
+    visibility: hidden;
+}
 /*----- TEXT AND FONT STYLES -----*/
 
 
@@ -175,18 +173,23 @@ body {
     margin-bottom: 15px;
 }
 
-#main-button {
+#main-text h2 {
+    color: var(--main-yellow);
+}
+button {
     margin-left:20px;
-    
+    background-color:var(--main-yellow);
 }
     
 
-.main-info {
-    visibility: hidden;
-}
 /*----- FOOTER STYLES -----*/
 
+footer {
+    text-align: center;
+}
 
+
+/*----- MEDIA QUERIES-----*/
 
 @media screen and (max-width:650px) {
     .header {
