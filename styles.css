@@ -173,6 +173,7 @@ h2 {
     text-align: left;
     margin-left: 20px;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 #main-text p {
@@ -183,8 +184,11 @@ h2 {
     color: var(--main-yellow);
 }
 button {
-    margin-left:20px;
+    margin-left:30px;
     background-color:var(--main-yellow);
+    padding: 5px;
+    font-weight:bold;
+    border-radius: 10px;
 }
     
 
@@ -220,6 +224,14 @@ textarea {
     
 }
 
+.submit {
+    background-color: var(--main-yellow);
+    padding: 5px;
+    border-radius: 10px;
+    border-color: var(--main-yellow);
+    margin-top: 10px;
+}
+
 h3 {
     color: var(--main-yellow);
 }
@@ -246,7 +258,7 @@ h3 {
     }
 
     .nav-link {
-        font-size: 14px;
+        font-size: 30px;
     }
 
     .hamburger {
