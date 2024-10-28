@@ -17,16 +17,17 @@ a {
     color: inherit;
 }
 
-body {
-    width: auto;
-    margin: 0 auto;
-    background-color: #000;
-    color:white;
-
+.home-page {
+    background-image: url(images/interurban.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 :root {
     --main-yellow:#c6990c;
+    --accent: #ffffff;
 }
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
@@ -53,6 +54,7 @@ body {
 .nav-list {
     display: flex;
     column-gap: 40px;
+    color: var(--accent);
 }
 
 .nav-item {
@@ -76,7 +78,7 @@ body {
     height: 2px;
     width: 40px;
     justify-content: space-between;
-    background:white;
+    background: var(--accent);
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
@@ -148,21 +150,16 @@ h2 {
 
 /*----- HEADER AND NAVIGATION STYLES -----*/
 .logo img {
-    width: 50px;
-    height:50px;
-    margin: 15px 10px 10px;
+    width: 70px;
+    height:70px;
+    margin: 15px 0px 10px;
 }
 
 
 /*----- MAIN STYLES -----*/
-#main-image {
-    top: 80px;
-    width:100%;
-    position:relative;
-}
 
 #main-info {
-    top: -40px;
+    top: 400px;
     width: 350px;
     position: relative;
 }
@@ -178,6 +175,7 @@ h2 {
 
 #main-text p {
     margin-left: 9px;
+    color: var(--accent);
 }
 
 #main-text h2 {
@@ -190,12 +188,17 @@ button {
     font-weight:bold;
     border-radius: 10px;
 }
+
+button:hover {
+
+}
     
 
 /*----- FOOTER STYLES -----*/
 
 footer {
-    text-align: center;
+  
+    
 }
 
 
