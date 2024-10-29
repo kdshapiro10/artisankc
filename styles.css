@@ -17,22 +17,22 @@ a {
     color: inherit;
 }
 
-.home-page {
-    background-image: url(images/interurban.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+    margin: auto 0;
+    background-color: var(--accent);
+    width: auto;
+    height: auto;
 }
 
 :root {
     --main-yellow:#c6990c;
     --accent: #ffffff;
+    --dark-gray: #1c1c1c;
 }
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
 .header {
-    background-color:  rgb(19, 22, 26, 70%);
+
     width:100%;
     margin:0 auto;
     top: 0;
@@ -62,6 +62,9 @@ a {
     text-transform: uppercase;
 }
 
+.nav-link {
+    color: #1c1c1c;
+}
 .nav-link:hover, .nav-link:focus {
     color:var(--main-yellow);
     padding-bottom: 5px;
@@ -78,7 +81,7 @@ a {
     height: 2px;
     width: 40px;
     justify-content: space-between;
-    background: var(--accent);
+    background: var(--dark-gray);
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
@@ -91,6 +94,7 @@ a {
 
 .hamburger--open .bar:nth-child(1){
     transform: translateY(7px) rotate(45deg);
+    background: var(--accent);
 }
 
 
@@ -101,6 +105,7 @@ a {
 
 .hamburger--open .bar:nth-child(3){
     transform: translateY(-7px) rotate(-45deg);
+    background: var(--accent);
 }
 
 
@@ -159,7 +164,7 @@ h2 {
 /*----- MAIN STYLES -----*/
 
 #main-info {
-    top: 400px;
+    top: 100px;
     width: 350px;
     position: relative;
 }
@@ -189,16 +194,14 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
 
-}
     
 
 /*----- FOOTER STYLES -----*/
 
 footer {
-  
-    
+    margin-top:400px;
+    text-align: center;
 }
 
 
@@ -208,7 +211,7 @@ footer {
     row-gap: 30px;
 }
 
-label{
+label {
     align-items: left;
 }
 
@@ -221,7 +224,6 @@ textarea {
     height: 100px;
 }
 #contact-form {
-    
     min-width: 500px;
     align-items: center;
     
@@ -238,12 +240,9 @@ textarea {
 h3 {
     color: var(--main-yellow);
 }
-/*----- MEDIA QUERIES-----*/
+/*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
-@media screen and (max-width:650px) {
-    .header {
-        height: 
-    }
+@media screen and (max-width:650px) {   
     .nav {
         top: 0;
         left: 0;
@@ -262,15 +261,14 @@ h3 {
 
     .nav-link {
         font-size: 30px;
+        color: var(--accent);
     }
 
     .hamburger {
         display: block;
     }
 
-    #main-image {
-        
-    }
+
 } 
 
 
