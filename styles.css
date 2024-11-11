@@ -228,85 +228,11 @@ footer {
 
 
 
-.slider {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-}
-
-figure {
-    position: relative;
-    left: 0;
-    width: 400%;
-    animation: 10s slide infinite;
-}
-
-.slide {
-    position: relative;
-    width: 100%;
-    float: left;
-}
 
 
-.slide h1 {
-    position: absolute;
-    font-size: 3em;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    color: var(--accent);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
 
-.slide img {
-    width: 100%;
-    height: auto;
-}
 
-@keyframes slide{
-    0%{
-        left:0;
-    }
-    10%{
-        left:0;
-    }
-    20%{
-        left: -100%;
-    }
-    30%{
-        left: -100%;
-    }
-    40%{
-        left: -200%;
-    }
-    50%{
-        left: -200%;
-    }
-    55%{
-        left:-300%;
-    }
-    65%{
-        left:-300%;
-    }
-    66%{
-        left:-200%;
-    }
-    74%{
-        left:-200%;
-    }
-    75%{
-        left:-100%;
-    }
-    85%{
-        left:-200%;
-    }
-    90%{
-        left:0;
-    }
-    100%{
-        left:0;
-    }
-}  
+/*-----
 
 
 /* CONTACT-US.HTML----*/
@@ -378,6 +304,9 @@ h3 {
 
 } 
 
+@media screen and (min-width:650px) {
+    
+}
 
 
 /* CONTACT-US.HTML----*/
