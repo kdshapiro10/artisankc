@@ -18,13 +18,12 @@ a {
 }
 
 .about-page, .our-team-page, .contact-page {
-    text-align: center;
-    align-items: center;
+    background-color: var(--light-gray);
 }
 
 .about-page main, .our-team-page main, .contact-page main{
-    min-width: 550px;
-    justify-content: center;
+    width: 365px;
+    margin: 0 auto;
 }
 
 
@@ -45,6 +44,7 @@ a {
     --main-yellow:#c6990c;
     --accent: #ffffff;
     --dark-gray: #1c1c1c;
+    --light-gray: #eaeaea;
 }
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
@@ -220,7 +220,7 @@ button:hover {
 /*----- FOOTER STYLES -----*/
 
 footer {
-    margin-top:400px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -236,6 +236,7 @@ footer {
 
 
 /* CONTACT-US.HTML----*/
+
 #contact-grid {
     text-align: center;
     row-gap: 30px;
@@ -254,9 +255,12 @@ textarea {
     height: 100px;
 }
 #contact-form {
-    min-width: 500px;
     align-items: center;
     
+}
+
+#contact-form h3 {
+    margin-top: 20px;
 }
 
 .submit {
@@ -271,8 +275,46 @@ h3 {
     color: var(--main-yellow);
 }
 
+/*----OUR-TEAM.HTML STYLES-----*/   
+#team-main {
+    margin: 0 auto;
+    text-align: center;
+}
 
+#team-main h2 {
+    margin-top: 20px;
+}
 
+#team {
+    margin-top: 40px;
+}
+
+.team-card {
+    margin-bottom: 20px;
+    background-color: var(--main-yellow);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.team-name {
+    color:var(--accent);
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.team-postion {
+    text-transform: uppercase;
+}
+
+.team-images {
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+
+}
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
 @media screen and (max-width:650px) {   
@@ -304,8 +346,18 @@ h3 {
 
 } 
 
+/*-----OTHER MEDIA QUERIES-----*/
+
 @media screen and (min-width:650px) {
-    
+    #team {
+        width: 1000px;
+
+
+    }
+    .team-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 
