@@ -180,10 +180,12 @@ h2 {
 
 /*----- MAIN STYLES -----*/
 
-#main-info {
-    top: 100px;
-    width: 350px;
-    position: relative;
+#index-main {
+    margin-top: 300px;
+    margin-left: 35px;
+    width: 400px;
+    position: absolute;
+    
 }
 
 #main-text {
@@ -193,6 +195,7 @@ h2 {
     margin-left: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 #main-text p {
@@ -204,10 +207,14 @@ h2 {
     color: var(--main-yellow);
 }
 button {
-    margin-left:30px;
+    margin-left: 70px;
     background-color:var(--main-yellow);
-    padding: 5px;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
     font-weight:bold;
+    font-size: 15px;
     border-radius: 10px;
 }
 
@@ -224,6 +231,10 @@ footer {
     text-align: center;
 }
 
+#footer-main {
+    visibility: hidden;
+}
+
 /*----- ABOUT-US.HTML-----*/
 
 
@@ -231,49 +242,6 @@ footer {
 
 
 
-
-/*-----
-
-
-/* CONTACT-US.HTML----*/
-
-#contact-grid {
-    text-align: center;
-    row-gap: 30px;
-}
-
-label {
-    align-items: left;
-}
-
-fieldset {
-    min-width: 500px;
-}
-
-textarea {
-    width: 300px;
-    height: 100px;
-}
-#contact-form {
-    align-items: center;
-    
-}
-
-#contact-form h3 {
-    margin-top: 20px;
-}
-
-.submit {
-    background-color: var(--main-yellow);
-    padding: 5px;
-    border-radius: 10px;
-    border-color: var(--main-yellow);
-    margin-top: 10px;
-}
-
-h3 {
-    color: var(--main-yellow);
-}
 
 /*----OUR-TEAM.HTML STYLES-----*/   
 #team-main {
@@ -315,9 +283,62 @@ h3 {
     margin-left: 60px;
 
 }
+
+
+/* CONTACT-US.HTML----*/
+
+#contact-grid {
+    text-align: center;
+    row-gap: 30px;
+}
+
+
+
+label {
+    text-align: center;
+    font-size: 15px;
+}
+
+input {
+    width: 300px;
+}
+fieldset {
+    min-width: 500px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+#contact-form {
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#contact-form h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#contact-moreinfo {
+    margin-bottom: 15px;
+}
+
+.submit {
+    background-color: var(--main-yellow);
+    padding: 5px;
+    border-radius: 10px;
+    border-color: var(--main-yellow);
+    margin-top: 10px;
+}
+
+h3 {
+    color: var(--main-yellow);
+}
+
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
-@media screen and (max-width:650px) {   
+@media screen and (max-width:850px) {   
     .nav {
         top: 0;
         left: 0;
@@ -348,28 +369,114 @@ h3 {
 
 /*-----OTHER MEDIA QUERIES-----*/
 
-@media screen and (min-width:650px) {
-    #team {
-        width: 1000px;
+@media screen and (min-width:850px) {
+    #index-main {
+        margin-top: 300px;
+        position:absolute;
+    }
+    
+    #main-text {
+        font-size: 25px;
+        width: 700px;
+        text-align: left;
+    }
 
+    #main-text h2 {
+        margin-left: -220px;
+    }
+
+    button {
+        margin-left: 20px;
+    }
+    
+    #team-main {
+        margin-left: 100px;
+        padding: 0;
 
     }
+
+    #team-main h2 {
+        margin-left: -50px;
+        width: 850px;
+        font-size: 30px;
+    }
+    #team {
+        width: 725px;
+    }
+
     .team-card {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        box-shadow: #1c1c1c;
+    }
+    
+
+    .team-name {
+        display: grid;
+        font-size: 25px;
+    }
+    
+    .team-images {
+        display: grid;
+        margin-left: 240px;
+
+    }
+    .team-postion {
+        display: grid;
+
+    }
+
+    .team-description {
+        display: grid;
+
+    }
+
+    /*-----CONTACT-US-----*/
+    #contact-main h2 {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+
+
+
+    #contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 85px;
+        margin-left: -125px;
+        margin-top: 10px;
+    }
+
+    #contact-form {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    #contact-form h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #contact-moreinfo {
+        display:grid;
+        grid-column: 2/6;
+        grid-row: 1/2;
+        margin-top: 20px;
+    }
+
+    #contact-address {
+        display: grid;
+        grid-column: 2/6;
+        grid-row: 2/4;
+        margin-top: 0px;
+    }
+
+    #contact-moreinfo h3, #contact-address h3 {
+        font-size: 20px;
     }
 }
 
-
-/* CONTACT-US.HTML----*/
-#contact-grid {
-    display: grid;
-    
-}
-
-#contact-form {
-    display: grid;
-  
-}
 
 
