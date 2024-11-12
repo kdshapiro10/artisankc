@@ -563,29 +563,28 @@ h3 {
 
     #team-main {
         padding: 0;
-        width:1200px;
+        width:1500px;
+        text-align: center;
     }
 
-    #team-main-h2 {
-        min-width: 1200px;
-        marign-left: 
+    #team-main h2 {
+        width: 1500px;
+        margin-bottom: 20px;
     }
+
     .team-card{
+        padding: 20px;
+        width: 1500px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     } 
 
-    #david {
-        width: 1200px;
-    }
-
-    #john {
-        width: 1400px;
-    }
+   
     .team-name {
         display: grid;
         grid-column: 1/2;
         grid-row: 1/2;
+        font-size: 28px;
     }
 
     .team-images {
@@ -594,13 +593,38 @@ h3 {
         display:grid;
         grid-column: 1/2;
         grid-row: 2/3;
+        margin-left: 210px;
+        row-gap: 10px;
 
     }
 
+    #david p {
+        margin-top: 60px;
+    }
+
+    #jack p {
+        margin-top: 10px;
+    }
+
+    #john h3 {
+        margin-top: 50px;
+    }
+    
+
+    .team-position {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/5;
+        font-size: 25px;
+    }
     
     .team-description {
         display: grid;
-        grid-column: 2/5;
+        grid-column: 2/4;
+        grid-row: 1/6;
+        text-align: left;
+        font-size: 23px;
+
     }
 
 }
