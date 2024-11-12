@@ -182,10 +182,8 @@ h2 {
 
 #index-main {
     margin-top: 300px;
-    margin-left: 35px;
+    margin-left: 50px;
     width: 400px;
-    position: absolute;
-    
 }
 
 #main-text {
@@ -338,7 +336,7 @@ h3 {
 
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
-@media screen and (max-width:850px) {   
+@media screen and (max-width:650px) {   
     .nav {
         top: 0;
         left: 0;
@@ -388,7 +386,7 @@ h3 {
     button {
         margin-left: 20px;
     }
-    
+
     #team-main {
         margin-left: 100px;
         padding: 0;
