@@ -17,13 +17,32 @@ a {
     color: inherit;
 }
 
+
 .about-page, .our-team-page, .contact-page {
-    background-color: var(--light-gray);
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-page::after, .our-team-page::after, .contact-page::after, .home-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-gray);
+    opacity: 17%;
+    z-index: -1;
+    
 }
 
 .about-page main, .our-team-page main, .contact-page main{
     width: 365px;
     margin: 0 auto;
+    
 }
 
 
@@ -44,7 +63,8 @@ a {
     --main-yellow:#c6990c;
     --accent: #ffffff;
     --dark-gray: #1c1c1c;
-    --light-gray: #eaeaea;
+    --light-gray: #e7e7e7;
+
 }
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
@@ -53,6 +73,7 @@ a {
     width:100%;
     margin:0 auto;
     top: 0;
+    position: fixed;
 }
 
 .header-content {
@@ -162,11 +183,10 @@ a {
 }
 /*----- TEXT AND FONT STYLES -----*/
 
-h2 {
-    color: var(--main-yellow);
+.home-page h2 {
+    color: var(--dark-gray);
     text-align: center;
 }
-
 
 
 
@@ -181,16 +201,15 @@ h2 {
 /*----- MAIN STYLES -----*/
 
 #index-main {
-    margin-top: 300px;
-    margin-left: 35px;
+    margin-top: 400px;
+    margin-left: -20px;
     width: 400px;
-    position: absolute;
     
 }
 
 #main-text {
     background-color: rgb(19, 22, 26, 70%);
-    padding: 5px 10px;
+    padding-right: 10px;
     text-align: left;
     margin-left: 20px;
     margin-bottom: 15px;
@@ -201,20 +220,21 @@ h2 {
 #main-text p {
     margin-left: 9px;
     color: var(--accent);
+    text-align: center;
 }
 
 #main-text h2 {
     color: var(--main-yellow);
 }
 button {
-    margin-left: 70px;
+    margin-left: 55px;
     background-color:var(--main-yellow);
     padding-left: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 100px;
     font-weight:bold;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
@@ -244,37 +264,54 @@ footer {
 
 
 /*----OUR-TEAM.HTML STYLES-----*/   
-#team-main {
-    margin: 0 auto;
-    text-align: center;
-}
-
-#team-main h2 {
-    margin-top: 20px;
-}
-
 #team {
     margin-top: 40px;
 }
 
+#team-main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#team-main h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10% 10%;
+    padding: 20px;
+}
+
 .team-card {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background-color: var(--main-yellow);
     padding: 20px;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr;
+    box-shadow: 3px 2px 10px;
     
 }
 
 .team-name {
-    color:var(--accent);
+    color:var(--dark-gray);
     padding-bottom: 10px;
     padding-top: 0px;
+    text-transform: uppercase;
+    font-size: 22px;
+
 }
 
-.team-postion {
+.team-position {
     text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--light-gray);
+    
+}
+
+.team-description {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .team-images {
@@ -292,7 +329,14 @@ footer {
     row-gap: 30px;
 }
 
-
+#contact-main h2 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10% 10%;
+    padding: 20px;
+}
 
 label {
     text-align: center;
@@ -332,6 +376,11 @@ textarea {
     margin-top: 10px;
 }
 
+.submit:hover {
+    background-color: var(--dark-gray);
+    color: var(--main-yellow);
+    
+}
 h3 {
     color: var(--main-yellow);
 }
@@ -370,8 +419,9 @@ h3 {
 /*-----OTHER MEDIA QUERIES-----*/
 
 @media screen and (min-width:850px) {
+    /*-----INDEX STYLES-----*/
     #index-main {
-        margin-top: 300px;
+        margin-top: 600px;
         position:absolute;
     }
     
@@ -385,23 +435,36 @@ h3 {
         margin-left: -220px;
     }
 
+    #main-text p {
+        margin-left: -320px;
+    }
     button {
         margin-left: 20px;
     }
     
-    #team-main {
-        margin-left: 100px;
-        padding: 0;
+    /*----ABOUT PAGE STYLES-----*/
+    #about-main {
+        width: 850px;
+        text-align: center;
+    }
+     #about-main h2 {
+        font-size: 30px;
+        margin-top: 30px;
+     }
 
+    /*-----TEAM STYLES-----*/ 
+    #team-main {
+        padding: 0;
+        width: 850px;
     }
 
     #team-main h2 {
-        margin-left: -50px;
+
         width: 850px;
         font-size: 30px;
     }
     #team {
-        width: 725px;
+        width: 850px;
     }
 
     .team-card {
@@ -419,33 +482,38 @@ h3 {
     
     .team-images {
         display: grid;
-        margin-left: 240px;
+        width: 300px;
+        height: 300px;
+        margin-left: 255px;
 
     }
     .team-postion {
         display: grid;
+        font-size: 23px;
 
     }
 
     .team-description {
         display: grid;
+        font-size: 21px;;
 
     }
 
     /*-----CONTACT-US-----*/
+
     #contact-main h2 {
-        margin-top: 15px;
+        margin-top: 25px;
         font-size: 30px;
+        text-align: center;
     }
-
-
 
     #contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 85px;
-        margin-left: -125px;
-        margin-top: 10px;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 50px;
+        width: 850px;
+        margin-top: 75px;
+        margin-left: -200px;
     }
 
     #contact-form {
@@ -455,7 +523,13 @@ h3 {
     }
 
     #contact-form h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    label {
         font-size: 20px;
+        text-align: left;
         margin-bottom: 10px;
     }
 
@@ -474,9 +548,59 @@ h3 {
     }
 
     #contact-moreinfo h3, #contact-address h3 {
+        font-size: 25px;
+    }
+
+    #contact-moreinfo p, #contact-address p {
         font-size: 20px;
     }
+    
 }
 
 
+@media screen and (min-width:1800px) {
+    /*-----TEAM PAGE STYLES-----*/
 
+    #team-main {
+        padding: 0;
+        width:1200px;
+    }
+
+    #team-main-h2 {
+        min-width: 1200px;
+        marign-left: 
+    }
+    .team-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+
+    #david {
+        width: 1200px;
+    }
+
+    #john {
+        width: 1400px;
+    }
+    .team-name {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .team-images {
+        width: 300px;
+        height: 300px;
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+    
+    .team-description {
+        display: grid;
+        grid-column: 2/5;
+    }
+
+}
