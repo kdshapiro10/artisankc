@@ -100,10 +100,10 @@ a {
     text-transform: uppercase;
 }
 
-li a {
+.nav-link {
     color: #1c1c1c;
 }
-li a:hover, li a:focus {
+.nav-link:hover, .nav-link:focus {
     color:var(--main-yellow);
     padding-bottom: 5px;
     font-weight: bold;
