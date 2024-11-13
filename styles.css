@@ -98,6 +98,7 @@ a {
 .nav-item {
     font-size: 20px;
     text-transform: uppercase;
+    font-family: "Anton", serif;
 }
 
 .nav-link {
@@ -202,33 +203,37 @@ a {
 
 #index-main {
     margin-top: 400px;
-    margin-left: -20px;
-    width: 400px;
-    
+    margin-left: 11px;
+    width: 400px; 
 }
 
 #main-text {
-    background-color: rgb(19, 22, 26, 70%);
     padding-right: 10px;
     text-align: left;
     margin-left: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
     font-size: 20px;
+    
 }
 
 #main-text p {
-    margin-left: 9px;
+    margin-left: 0px;
     color: var(--accent);
     text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 #main-text h2 {
-    color: var(--main-yellow);
+    color: var(--accent);
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 4px 5px #1c1c1c;
 }
 
 .button {
-    margin-left: 55px;
+    margin-left: 62px;
     background-color:var(--main-yellow);
     padding-left: 100px;
     padding-top: 10px;
@@ -237,6 +242,8 @@ a {
     font-weight:bold;
     font-size: 20px;
     border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    box-shadow: 2px 4px 8px #1c1c1c;
 }
 
 .button:hover {
@@ -280,6 +287,7 @@ footer {
     background-color: var(--light-gray);
     border-radius: 10% 10%;
     padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .team-card {
@@ -384,6 +392,7 @@ textarea {
 }
 h3 {
     color: var(--main-yellow);
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
@@ -403,6 +412,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
+       
     }
 
     .nav-link {
@@ -420,10 +430,18 @@ h3 {
 /*-----OTHER MEDIA QUERIES-----*/
 
 @media screen and (min-width:850px) {
+    nav {
+        font-family: "Roboto Condensed", sans-serif;
+        word-spacing: 5px;
+        letter-spacing:;
+    }
     /*-----INDEX STYLES-----*/
     #index-main {
-        margin-top: 600px;
+        margin-top: 400px;
         position:absolute;
+        border-left: solid 4px#e7e7e7;
+        margin-left: 120px;
+        text-align: left;
     }
     
     #main-text {
@@ -433,21 +451,28 @@ h3 {
     }
 
     #main-text h2 {
-        margin-left: -220px;
+        margin-left: -280px;
     }
 
     #main-text p {
-        margin-left: -320px;
+        margin-left: -345px;
+        font-size: ;
     }
-    button {
+
+    .button {
         margin-left: 20px;
     }
     
+
+    #about h1 {
+        color: var(--main-yellow);
+    }
     /*----ABOUT PAGE STYLES-----*/
     #about-main {
         width: 850px;
         text-align: center;
     }
+
      #about-main h2 {
         font-size: 30px;
         margin-top: 30px;
