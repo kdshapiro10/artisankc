@@ -21,7 +21,6 @@ a {
 .about-page, .our-team-page, .contact-page {
     background-image: url(images/background.jpeg);
     background-size: cover;
-    position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -69,7 +68,7 @@ a {
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
 .header {
-    background-color: var(--accent);
+    background-color: var(--dark-gray);
     width:100%;
     margin:0 auto;
     top: 0;
@@ -102,7 +101,7 @@ a {
 }
 
 .nav-link {
-    color: #1c1c1c;
+    color: var(--accent);
 }
 .nav-link:hover, .nav-link:focus {
     color:var(--main-yellow);
@@ -433,7 +432,6 @@ h3 {
     nav {
         font-family: "Roboto Condensed", sans-serif;
         word-spacing: 5px;
-        letter-spacing:;
     }
     /*-----INDEX STYLES-----*/
     #index-main {
@@ -463,20 +461,9 @@ h3 {
         margin-left: 20px;
     }
     
-
-    #about h1 {
-        color: var(--main-yellow);
-    }
     /*----ABOUT PAGE STYLES-----*/
-    #about-main {
-        width: 850px;
-        text-align: center;
-    }
-
-     #about-main h2 {
-        font-size: 30px;
-        margin-top: 30px;
-     }
+   
+    
 
     /*-----TEAM STYLES-----*/ 
     #team-main {
