@@ -306,6 +306,7 @@ footer {
     padding-top: 0px;
     text-transform: uppercase;
     font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
 
 }
 
@@ -314,6 +315,7 @@ footer {
     margin-top: 5px;
     font-size: 20px;
     color: var(--light-gray);
+    font-family: "Roboto Condensed", sans-serif;
     
 }
 
@@ -596,7 +598,7 @@ h3 {
     .team-card h3 {
         display: grid;
         grid-column: 1/2;
-        grid-row: 1/2;
+        grid-row: 2/3;
         font-size: 28px;
     }
 
@@ -605,7 +607,7 @@ h3 {
         height: 300px;
         display:grid;
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 4/5;
         margin-left: 210px;
         row-gap: 10px;
 
@@ -620,15 +622,16 @@ h3 {
     }
 
     #john h3 {
-        margin-top: 50px;
+        margin-top: 10px;
     }
     
 
     .team-card h4 {
         display: grid;
         grid-column: 1/2;
-        grid-row: 3/5;
+        grid-row: 3/4;
         font-size: 25px;
+        margin-bottom: 10px;
     }
     
     .team-card p {
