@@ -475,9 +475,8 @@ h3 {
     }
 
     #team-main h2 {
-
         width: 850px;
-        font-size: 30px;
+        font-size: 34px;
     }
     #team {
         width: 850px;
@@ -586,6 +585,7 @@ h3 {
     #team-main h2 {
         width: 1500px;
         margin-bottom: 20px;
+        font-size: 40px;
     }
 
     .team-card{
