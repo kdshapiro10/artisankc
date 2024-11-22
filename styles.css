@@ -437,13 +437,20 @@ textarea {
     
 }
 
-.about-page footer , .our-team-page footer, .contact-page footer {
+.about-page footer , .our-team-page footer {
     font-size: 18px;
     background-color: var(--dark-gray);
     color: var(--accent);
     padding: 25px;
 }
 
+.contact-page footer {
+    font-size: 18px;
+    background-color: var(--dark-gray);
+    color: var(--accent);
+    padding: 25px;
+    margin-top: 20px;
+}
 
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
@@ -480,10 +487,6 @@ textarea {
 /*-----OTHER MEDIA QUERIES-----*/
 
 @media screen and (min-width:850px) {
-    nav {
-        font-family: "Roboto Condensed", sans-serif;
-        word-spacing: 5px;
-    }
     /*-----INDEX STYLES-----*/
     #index-main {
         margin-top: 400px;
@@ -505,7 +508,6 @@ textarea {
 
     #main-text p {
         margin-left: -345px;
-        font-size: ;
     }
 
     .button {
@@ -521,7 +523,6 @@ textarea {
     #team-main {
         margin-left: 100px;
         padding: 0;
-
     }
 
     #team-main h2 {
@@ -529,7 +530,7 @@ textarea {
         font-size: 34px;
     }
     #team {
-        width: 725px;
+        width: 850px;
     }
 
     .team-card {
@@ -607,6 +608,11 @@ textarea {
         font-size: 20px;
     }
 
+
+}
+
+@media  screen and (min-width: 1500px) { 
+    
     #team-main {
         padding: 0;
         width:1500px;
