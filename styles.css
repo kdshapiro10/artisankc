@@ -289,14 +289,17 @@ footer {
     margin-left: 5px;
     text-align: center;
     margin-bottom: 20px;
+    background-color: rgba(231, 231, 231, 0.5);
+    border-radius: 5px;
+    padding: 20px;
 }
 
-
-#overview q {
-    font-size: 18px;
+#overview h3 {
+    color: var(--main-yellow);
     text-align: center;
+    font-size: 27px;
+    text-shadow: 2px 4px 10px #1c1c1c;
 }
-
 
 /*----OUR-TEAM.HTML STYLES-----*/   
 #team {
@@ -380,12 +383,17 @@ footer {
 
 label {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
+    float: left;
+    margin-left: 35px;
+    font-weight: bold;
 }
 
 input {
     width: 300px;
+    margin-bottom: 15px;
 }
+
 fieldset {
     min-width: 500px;
 }
@@ -420,6 +428,13 @@ textarea {
     background-color: var(--dark-gray);
     color: var(--main-yellow);
     
+}
+
+.about-page footer , .our-team-page footer, .contact-page footer {
+    font-size: 18px;
+    background-color: var(--dark-gray);
+    color: var(--accent);
+    padding: 25px;
 }
 
 
@@ -491,7 +506,9 @@ textarea {
     }
     
     /*----ABOUT PAGE STYLES-----*/
-   
+   #about-main {
+        width: 850px;
+   }
     
 
     /*-----TEAM STYLES-----*/ 
@@ -543,7 +560,6 @@ textarea {
     /*-----CONTACT-US-----*/
 
     #contact-main h2 {
-        margin-top: 25px;
         font-size: 30px;
         text-align: center;
     }
@@ -553,7 +569,7 @@ textarea {
         grid-template-columns: 2fr 2fr;
         grid-gap: 50px;
         width: 850px;
-        margin-top: 75px;
+        margin-top: 50px;
         margin-left: -200px;
     }
 
@@ -572,6 +588,8 @@ textarea {
         font-size: 20px;
         text-align: left;
         margin-bottom: 10px;
+        margin-left: 15px;
+        
     }
 
     #contact-moreinfo {
