@@ -18,7 +18,24 @@ a {
 }
 
 .about-page, .our-team-page, .contact-page {
-    background-color: var(--light-gray);
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.about-page::after, .our-team-page::after, .contact-page::after, .home-page::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-gray);
+    opacity: 30%;
+    z-index: -1;
+    
 }
 
 .about-page main, .our-team-page main, .contact-page main{
@@ -49,7 +66,7 @@ a {
 
 /*----- HAMBURGER NAV MENU STYLES-----*/
 .header {
-    background-color: var(--accent);
+    background-color: var(--dark-gray);
     width:100%;
     margin:0 auto;
     top: 0;
@@ -77,10 +94,11 @@ a {
 .nav-item {
     font-size: 20px;
     text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .nav-link {
-    color: #1c1c1c;
+    color: var(--accent);
 }
 .nav-link:hover, .nav-link:focus {
     color:var(--main-yellow);
@@ -98,7 +116,7 @@ a {
     height: 2px;
     width: 40px;
     justify-content: space-between;
-    background: var(--dark-gray);
+    background: var(--accent);
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out;
@@ -181,31 +199,38 @@ h2 {
 /*----- MAIN STYLES -----*/
 
 #index-main {
-    margin-top: 300px;
-    margin-left: 50px;
-    width: 400px;
+    margin-top: 400px;
+    margin-left: 11px;
+    width: 400px; 
 }
 
 #main-text {
-    background-color: rgb(19, 22, 26, 70%);
-    padding: 5px 10px;
+    padding-right: 10px;
     text-align: left;
     margin-left: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
     font-size: 20px;
+    
 }
 
 #main-text p {
-    margin-left: 9px;
+    margin-left: 0px;
     color: var(--accent);
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 #main-text h2 {
-    color: var(--main-yellow);
+    color: var(--accent);
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 4px 5px #1c1c1c;
 }
-button {
-    margin-left: 70px;
+
+.button {
+    margin-left: 62px;
     background-color:var(--main-yellow);
     padding-left: 100px;
     padding-top: 10px;
@@ -214,9 +239,11 @@ button {
     font-weight:bold;
     font-size: 15px;
     border-radius: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    box-shadow: 2px 4px 8px #1c1c1c;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--dark-gray);
     color: var(--main-yellow);
 }
@@ -234,12 +261,42 @@ footer {
 }
 
 /*----- ABOUT-US.HTML-----*/
+#about-main {
+    margin-top: 130px;
+}
 
+#about-main h2 {
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10% 10%;
+    padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
 
+#overview img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
+#overview p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(231, 231, 231, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+}
 
-
-
+#overview h3 {
+    color: var(--main-yellow);
+    text-align: center;
+    font-size: 27px;
+    text-shadow: 2px 4px 10px #1c1c1c;
+}
 
 /*----OUR-TEAM.HTML STYLES-----*/   
 #team-main {
@@ -255,6 +312,20 @@ footer {
     margin-top: 40px;
 }
 
+#team-main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#team-main h2 {
+    margin-top: 40px;
+    font-size: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10% 10%;
+    padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 .team-card {
     margin-bottom: 20px;
     background-color: var(--main-yellow);
@@ -265,17 +336,31 @@ footer {
     
 }
 
-.team-name {
-    color:var(--accent);
+.team-card h3 {
+    color:var(--dark-gray);
     padding-bottom: 10px;
     padding-top: 0px;
-}
-
-.team-postion {
     text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+
 }
 
-.team-images {
+.team-card h4 {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 20px;
+    color: var(--light-gray);
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+
+.team-card p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.team-card img {
     width: 200px;
     height: 200px;
     margin-left: 60px;
@@ -291,15 +376,29 @@ footer {
 }
 
 
+#contact-main h2 {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 30px;
+    background-color: var(--light-gray);
+    border-radius: 10% 10%;
+    padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
 
 label {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
+    float: left;
+    margin-left: 35px;
+    font-weight: bold;
 }
 
 input {
     width: 300px;
+    margin-bottom: 15px;
 }
+
 fieldset {
     min-width: 500px;
 }
@@ -330,9 +429,19 @@ textarea {
     margin-top: 10px;
 }
 
-h3 {
+.submit:hover {
+    background-color: var(--dark-gray);
     color: var(--main-yellow);
+    
 }
+
+.about-page footer , .our-team-page footer, .contact-page footer {
+    font-size: 18px;
+    background-color: var(--dark-gray);
+    color: var(--accent);
+    padding: 25px;
+}
+
 
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
@@ -351,6 +460,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         row-gap: 20px;
+       
     }
 
     .nav-link {
@@ -368,9 +478,17 @@ h3 {
 /*-----OTHER MEDIA QUERIES-----*/
 
 @media screen and (min-width:850px) {
+    nav {
+        font-family: "Roboto Condensed", sans-serif;
+        word-spacing: 5px;
+    }
+    /*-----INDEX STYLES-----*/
     #index-main {
-        margin-top: 300px;
+        margin-top: 400px;
         position:absolute;
+        border-left: solid 4px#e7e7e7;
+        margin-left: 120px;
+        text-align: left;
     }
     
     #main-text {
@@ -380,12 +498,23 @@ h3 {
     }
 
     #main-text h2 {
-        margin-left: -220px;
+        margin-left: -280px;
     }
 
-    button {
+    #main-text p {
+        margin-left: -345px;
+        font-size: ;
+    }
+
+    .button {
         margin-left: 20px;
     }
+    
+    /*----ABOUT PAGE STYLES-----*/
+   #about-main {
+        width: 850px;
+   }
+    
 
     #team-main {
         margin-left: 100px;
@@ -394,9 +523,8 @@ h3 {
     }
 
     #team-main h2 {
-        margin-left: -50px;
         width: 850px;
-        font-size: 30px;
+        font-size: 34px;
     }
     #team {
         width: 725px;
@@ -410,29 +538,28 @@ h3 {
     }
     
 
-    .team-name {
+    .team-card h3 {
         display: grid;
         font-size: 25px;
     }
     
-    .team-images {
+    .team-card img {
         display: grid;
         margin-left: 240px;
 
     }
-    .team-postion {
+    .team-card h4 {
         display: grid;
 
     }
 
-    .team-description {
+    .team-card p {
         display: grid;
 
     }
 
     /*-----CONTACT-US-----*/
     #contact-main h2 {
-        margin-top: 15px;
         font-size: 30px;
     }
 
@@ -440,10 +567,11 @@ h3 {
 
     #contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 85px;
-        margin-left: -125px;
-        margin-top: 10px;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 50px;
+        width: 850px;
+        margin-top: 50px;
+        margin-left: -200px;
     }
 
     #contact-form {
@@ -455,6 +583,8 @@ h3 {
     #contact-form h3 {
         font-size: 20px;
         margin-bottom: 10px;
+        margin-left: 15px;
+        
     }
 
     #contact-moreinfo {
@@ -474,7 +604,70 @@ h3 {
     #contact-moreinfo h3, #contact-address h3 {
         font-size: 20px;
     }
+
+    #team-main {
+        padding: 0;
+        width:1500px;
+        text-align: center;
+    }
+
+    #team-main h2 {
+        width: 1500px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .team-card{
+        padding: 20px;
+        width: 1500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+
+   
+    .team-card h3 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-size: 28px;
+    }
+
+    .team-card img {
+        width: 300px;
+        height: 300px;
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin-left: 210px;
+        row-gap: 10px;
+
+    }
+
+    #david p {
+        margin-top: 60px;
+    }
+
+    #jack p {
+        margin-top: 10px;
+    }
+
+    
+
+    .team-card h4 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    
+    .team-card p {
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 1/6;
+        text-align: left;
+        font-size: 23px;
+
+    }
+
 }
-
-
-
