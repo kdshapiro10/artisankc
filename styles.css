@@ -279,6 +279,7 @@ footer {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
+    box-shadow:  1px 1px 15px #1c1c1c;
 }
 
 #overview p {
@@ -290,6 +291,11 @@ footer {
     background-color: rgba(231, 231, 231, 0.5);
     border-radius: 5px;
     padding: 20px;
+    box-shadow:  1px 1px 15px #1c1c1c;
+}
+
+#overview {
+    margin-bottom: 20px;
 }
 
 #overview h3 {
@@ -379,10 +385,10 @@ footer {
 
 
 #contact-main h2 {
-    text-align: center;
-    margin-top: 150px;
+    margin-top: 40px;
     font-size: 30px;
-    background-color: var(--light-gray);
+    color: var(--accent);    
+    text-shadow:1px 4px 4px  #1c1c1c;
     border-radius: 10% 10%;
     padding: 20px;
     font-family: "Roboto Condensed", sans-serif;
@@ -411,16 +417,22 @@ textarea {
 }
 #contact-form {
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    font-size: 22px;
 }
 
 #contact-form h3 {
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 3rem;
 }
 
 #contact-moreinfo {
-    margin-bottom: 15px;
+    margin-bottom: 4rem;
+    font-size: 20px;
+}
+
+#contact-address {
+    font-size: 20px;
 }
 
 .submit {
@@ -437,7 +449,7 @@ textarea {
     
 }
 
-.about-page footer , .our-team-page footer {
+footer {
     font-size: 18px;
     background-color: var(--dark-gray);
     color: var(--accent);
@@ -449,12 +461,22 @@ textarea {
     background-color: var(--dark-gray);
     color: var(--accent);
     padding: 25px;
-    margin-top: 20px;
+    margin-top: 19rem;
+}
+
+footer p:nth-child(1) {
+    margin-bottom: 1.25rem;
+}
+
+.top {
+    position: fixed;
+    bottom: 7rem;
+    right: 20px;
 }
 
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
-@media screen and (max-width:650px) {   
+@media screen and (max-width:850px) {   
     .nav {
         top: 0;
         left: 0;
@@ -518,10 +540,10 @@ textarea {
    #about-main {
         width: 850px;
    }
-    
+   
 
     #team-main {
-        margin-left: 100px;
+        width: 850px;
         padding: 0;
     }
 
@@ -529,9 +551,7 @@ textarea {
         width: 850px;
         font-size: 34px;
     }
-    #team {
-        width: 850px;
-    }
+    
 
     .team-card {
         display: grid;
@@ -548,17 +568,17 @@ textarea {
     
     .team-card img {
         display: grid;
-        margin-left: 240px;
+        margin-left: 300px;
 
     }
     .team-card h4 {
         display: grid;
-
+        font-size: 24px;
     }
 
     .team-card p {
         display: grid;
-
+        font-size: 22px;
     }
 
     /*-----CONTACT-US-----*/
@@ -608,74 +628,40 @@ textarea {
         font-size: 20px;
     }
 
-
 }
 
-@media  screen and (min-width: 1500px) { 
-    
+@media  screen and (min-width: 1400px) {
+
     #team-main {
-        padding: 0;
-        width:1500px;
-        text-align: center;
+        width: 1400px;
+
     }
 
-    #team-main h2 {
-        width: 1500px;
-        margin-bottom: 20px;
+     #team-main h2 {
+        width: 1400px;
+        text-align: center;
         font-size: 40px;
     }
-
-    .team-card{
-        padding: 20px;
-        width: 1500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    } 
-
-   
     .team-card h3 {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 2/3;
+        font-size: 30px;
+    }
+    
+    .team-card {
+        margin-bottom: 30px;
+    }
+    
+    .team-card h4 {
         font-size: 28px;
     }
-
-    .team-card img {
+    .team-card p {
+        font-size: 25px;
+    }
+        
+     .team-card img {
         width: 300px;
         height: 300px;
-        display:grid;
-        grid-column: 1/2;
-        grid-row: 4/5;
-        margin-left: 210px;
-        row-gap: 10px;
+        margin-left: 530px;
+        }
 
-    }
 
-    #david p {
-        margin-top: 60px;
-    }
-
-    #jack p {
-        margin-top: 10px;
-    }
-
-    
-
-    .team-card h4 {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 3/4;
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    
-    .team-card p {
-        display: grid;
-        grid-column: 2/4;
-        grid-row: 1/6;
-        text-align: left;
-        font-size: 23px;
-
-    }
-
-}
+}   
