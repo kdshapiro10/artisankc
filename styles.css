@@ -606,7 +606,7 @@ footer p:nth-child(1) {
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
         width: 850px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: -200px;
     }
 
@@ -625,7 +625,7 @@ footer p:nth-child(1) {
 
     #contact-moreinfo {
         display:grid;
-        margin-top: 80px;
+        margin-top: 20px;
         grid-column: 2/6;
         grid-row: 1/2;
     }
