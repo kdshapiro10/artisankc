@@ -81,26 +81,26 @@ a {
 }
 
 
-.nav {
+nav {
     transition: all 0.1s ease-in-out;
 }
 
-ul {
+.nav-list {
     display: flex;
     column-gap: 40px;
     color: var(--accent);
 }
 
-ul li {
+.nav-item {
     font-size: 20px;
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
 }
 
-li a {
+.nav-link {
     color: var(--accent);
 }
-li a:hover, .li a:focus {
+.nav-link:hover, .nav-link:focus {
     color:var(--main-yellow);
     padding-bottom: 5px;
     font-weight: bold;
@@ -211,7 +211,6 @@ h2 {
     margin-bottom: 15px;
     border-radius: 10px;
     font-size: 20px;
-    
 }
 
 #main-text p {
@@ -275,14 +274,23 @@ footer {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-#overview img {
+#about-main h2 {
+    font-size: 30px;
+    color: var(--accent);    
+    text-shadow:1px 4px 4px  #1c1c1c;
+    border-radius: 10% 10%;
+    padding: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#about-main img {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
     box-shadow:  1px 1px 15px #1c1c1c;
 }
 
-#overview p {
+#about-main p {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 5px;
@@ -298,34 +306,24 @@ footer {
     margin-bottom: 20px;
 }
 
-#overview h3 {
-    color: var(--main-yellow);
-    text-align: center;
-    font-size: 27px;
-    text-shadow: 2px 4px 10px #1c1c1c;
-}
 
 /*----OUR-TEAM.HTML STYLES-----*/   
 #team-main {
-    margin: 0 auto;
     text-align: center;
+}
+
+
+#team-main h2 {
+    margin-bottom: 20px;
+}
+
+#team-main {
+    text-align: center;
+    margin-top: 20px;
 }
 
 #team-main h2 {
     margin-top: 10px;
-}
-
-#team {
-    margin-top: 20px;
-}
-
-#team-main {
-    text-align: center;
-    margin-top: 50px;
-}
-
-#team-main h2 {
-    margin-top: 40px;
     font-size: 30px;
     color: var(--accent);    
     text-shadow:1px 4px 4px  #1c1c1c;
@@ -351,7 +349,6 @@ footer {
     text-transform: uppercase;
     font-size: 22px;
     font-family: "Roboto Condensed", sans-serif;
-
 }
 
 .team-card h4 {
@@ -360,7 +357,6 @@ footer {
     font-size: 20px;
     color: var(--main-yellow);
     font-family: "Roboto Condensed", sans-serif;
-    
 }
 
 .team-card p {
@@ -415,6 +411,7 @@ textarea {
     width: 300px;
     height: 100px;
 }
+
 #contact-form {
     align-items: center;
     margin-bottom: 3rem;
@@ -502,11 +499,9 @@ footer p:nth-child(1) {
     .hamburger {
         display: block;
     }
-
-
 } 
 
-/*-----OTHER MEDIA QUERIES-----*/
+/*----TABLET-----*/
 
 @media screen and (min-width:850px) {
     /*-----INDEX STYLES-----*/
@@ -540,8 +535,15 @@ footer p:nth-child(1) {
    #about-main {
         width: 850px;
    }
-   
+    
+   #about-main h2 {
+        font-size: 40px;
+   }
 
+   #about-main p {
+        font-size: 30px;
+        margin-top: 30px;
+   }
     #team-main {
         width: 850px;
         padding: 0;
@@ -551,6 +553,7 @@ footer p:nth-child(1) {
         width: 850px;
         font-size: 34px;
     }
+
     #team {
         width: 825px;
     }
@@ -632,24 +635,50 @@ footer p:nth-child(1) {
 
 }
 
+
 @media  screen and (min-width:1500px) {
-    
+    #about-main {
+        width: 1500px;
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+
+    #about img {
+        grid-column: 1/2;
+    }
+
+    #about h2, #about p {
+        grid-column: 2/-1;
+    }
+
+    #mission {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+
     #team-main {
-        width: 1400px;
+        width: 1500px;
 
     }
 
      #team-main h2 {
-        width: 1400px;
+        width: 1500px;
         text-align: center;
         font-size: 40px;
     }
     .team-card h3 {
         font-size: 30px;
+    
     }
     
     .team-card {
         margin-bottom: 30px;
+        width: 1500px;
     }
     
     .team-card h4 {
@@ -662,8 +691,6 @@ footer p:nth-child(1) {
      .team-card img {
         width: 300px;
         height: 300px;
-        margin-left: 530px;
-        }
-
-
+        margin-left: 580px;
+    }
 }   
