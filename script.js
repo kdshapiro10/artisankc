@@ -1,4 +1,4 @@
-const navEl = document.querySelector(".nav");
+const navEl = document.querySelector("nav");
 const hamburgerEl = document.querySelector(".hamburger");
 const mainInfo = document.getElementById("main-info");
 

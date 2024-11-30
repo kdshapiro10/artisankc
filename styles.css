@@ -477,7 +477,7 @@ footer p:nth-child(1) {
 /*----- MEDIA QUERY FOR NAV HAMBURGER MENU-----*/
 
 @media screen and (max-width:850px) {   
-    .nav {
+    nav {
         top: 0;
         left: 0;
         width:100%;
@@ -551,13 +551,9 @@ footer p:nth-child(1) {
         width: 850px;
         font-size: 34px;
     }
-<<<<<<< Updated upstream
-    
-=======
     #team {
         width: 825px;
     }
->>>>>>> Stashed changes
 
     .team-card {
         display: grid;
@@ -636,13 +632,8 @@ footer p:nth-child(1) {
 
 }
 
-<<<<<<< Updated upstream
-@media  screen and (min-width: 1400px) {
-
-=======
 @media  screen and (min-width:1500px) {
     
->>>>>>> Stashed changes
     #team-main {
         width: 1400px;
 
