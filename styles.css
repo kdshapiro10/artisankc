@@ -570,7 +570,6 @@ footer p:nth-child(1) {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        box-shadow: #1c1c1c;
     }
     
 
